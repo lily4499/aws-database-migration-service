@@ -3,6 +3,7 @@ provider "aws" {
 }
 
 resource "aws_db_instance" "my_database" {
+  identifier           = "source-db"
   allocated_storage    = 20
   storage_type         = "gp2"
   engine               = "mysql"

@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "eu-west-2" # Replace with your desired region
+  region = "us-east-1" # Replace with your desired region
 }
 
 resource "aws_db_instance" "my_database" {
@@ -11,7 +11,7 @@ resource "aws_db_instance" "my_database" {
   instance_class       = "db.t2.micro" # Replace with your desired instance type
 #  name                 = "my-mysql-db" # Replace with your desired database name
   username             = "admin" # Replace with your desired username
-  password             = "yourpassword" # Replace with your desired password
+  password             = "abc123" # Replace with your desired password
   parameter_group_name = "default.mysql5.7" # Replace with your desired parameter group
 
   # Replace with your preferred settings for the following parameters if needed

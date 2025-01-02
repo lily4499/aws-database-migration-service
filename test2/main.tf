@@ -18,3 +18,8 @@ resource "aws_db_instance" "my_database" {
   publicly_accessible = true
 }
 
+output "rds_endpoint" {
+  value = aws_db_instance.my_database.endpoint
+}
+
+
